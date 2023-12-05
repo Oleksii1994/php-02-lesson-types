@@ -5,6 +5,9 @@
 echo "<br>";
 
 
+
+//String 
+
 $name = "Oleksii"; //string
 var_dump($name); //var_dump() повертає тип і значення
 echo "<br>";
@@ -13,20 +16,26 @@ $name2 = "Олексій";
 var_dump($name2);
 echo "<br>";
 
+
+//Integer
+
 $age = 10; //integer
 $ageString = '10';
 var_dump($age);
 echo "<br>";
-echo $ageString + $age;
+
+echo $ageString + $age; // 20
 echo "<br>";
 
-
+//Float(double)
 
 $height = 1.74; //  float/double;
 var_dump($height);
 echo "<br>";
+
 echo gettype(intval($height)); //intval-->1 (int)
 echo "<br>";
+
 echo (gettype($height)); //double
 echo "<br>";
 
@@ -35,28 +44,31 @@ echo (gettype($height)); //-->integer 1
 echo "<br>";
 
 
-
+//Boolean
 
 $bool = true; //boolean
 
 echo is_int($bool); //нічого не виведе тому що false;
 echo is_string($name); //виведе 1 як true
 echo "<br>";
+
 echo is_bool($bool); // 1
 echo "<br>";
 
-
-
-$null = null; //зарезервували ячєйку але там пусто як і в js
-
 var_dump(isset($bool)); //true  isset() повертає буль 
 echo "<br>";
+
+
+//Null
+
+$null = null; //зарезервували ячєйку але там пусто як і в js
 
 var_dump(isset($null)); //тут поверне false оскільки null;
 echo "<br>";
 
 
 //Array
+
 $hobbies = ["riding", "sport", "playing"];
 $args = ["Oleksii", 29, 1.74, true]; //тут ключем буде індекс починаючи з 0
 $args2 = array(
@@ -107,6 +119,7 @@ $friends = "Nastya, Masha, Max";
 $arrayFriends = explode(', ', $friends); // конвертація з рядка в масив
 print_r($arrayFriends);
 echo "<br>";
+
 echo $arrayFriends[2];
 echo "<br>";
 
