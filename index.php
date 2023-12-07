@@ -116,7 +116,7 @@ print_r($reversed);
 //немає ланцюжків методів, якщо метод щось повертає, треба записати в окрему зміну
 
 $friends = "Nastya, Masha, Max";
-$arrayFriends = explode(', ', $friends); // конвертація з рядка в масив
+$arrayFriends = explode(', ', $friends); // конвертація з рядка в масив (аналог метода 'сплит' в js)
 print_r($arrayFriends);
 echo "<br>";
 
@@ -124,7 +124,7 @@ echo $arrayFriends[2];
 echo "<br>";
 
 
-$stringFriendsFromArray = implode(', ', $arrayFriends);
+$stringFriendsFromArray = implode(', ', $arrayFriends); //анaлог  join
 echo $stringFriendsFromArray;
 echo "<br>";
 
